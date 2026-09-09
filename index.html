@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هل أنا كلب؟ 🐕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+
+        <!-- SCREEN 1 -->
+        <section id="welcomeScreen" class="screen active">
+            <div class="emoji">🐕</div>
+
+            <p class="eyebrow">نظام التحقق الرسمي</p>
+
+            <h1>هل أنا كلب؟</h1>
+
+            <p class="subtitle">
+                أجب عن السؤال التالي لمعرفة الحقيقة.
+            </p>
+
+            <button id="startBtn" class="main-btn">
+                ابدأ التحقيق
+                <span>→</span>
+            </button>
+        </section>
+
+
+        <!-- SCREEN 2 -->
+        <section id="questionScreen" class="screen">
+            <div class="emoji small">🔎</div>
+
+            <p class="eyebrow">السؤال الثاني</p>
+
+            <h2>هل أنت علي محفوظ؟</h2>
+
+            <p class="subtitle">
+                هذه المعلومة ضرورية لإكمال عملية التحقق.
+            </p>
+
+            <div class="choices">
+                <button class="choice yes" data-answer="yes">
+                    إي
+                </button>
+
+                <button class="choice no" data-answer="no">
+                    لا
+                </button>
+            </div>
+        </section>
+
+
+        <!-- SCREEN 3 -->
+        <section id="loadingScreen" class="screen">
+            <div class="loader">🐕</div>
+
+            <p class="eyebrow">جاري التحليل</p>
+
+            <h2 id="loadingTitle">جاري التفكير...</h2>
+
+            <div class="progress-container">
+                <div id="progressBar" class="progress"></div>
+            </div>
+
+            <p id="loadingText" class="loading-text">
+                تحليل البيانات...
+            </p>
+        </section>
+
+
+        <!-- SCREEN 4 -->
+        <section id="resultScreen" class="screen">
+
+            <div id="resultEmoji" class="result-emoji">🐕</div>
+
+            <p class="eyebrow">نتيجة التحقيق</p>
+
+            <h2 id="resultTitle"></h2>
+
+            <p id="resultText" class="result-text"></p>
+
+            <div id="factBox" class="fact-box">
+                <span>💡</span>
+                <p>
+                    معلومة مهمة جدًا: علي محفوظ هو نوع من أنواع
+                    <strong>الكلاب الجعارية.</strong>
+                </p>
+            </div>
+
+            <button id="restartBtn" class="main-btn">
+                إعادة التحقيق
+                <span>↻</span>
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 — معهد أبحاث الكلبية المتقدمة 🐾
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
